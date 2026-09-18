@@ -4,7 +4,11 @@ format: pdf
 editor: visual
 ---
 
+# Packages
+
+
 ## Question 1
+
 ```{r}
 #| eval: false
 install.packages("aRtsy")
@@ -12,5 +16,12 @@ install.packages("aRtsy")
 
 install.packages() is used to install a package on the computer, while library() is used to load an installed package into the current R session. Usually, a package only needs to be installed once, but library() needs to be run every time when starting a new R session and want to use that package.
 
+## Question 2
 
+```{r}
+library(aRtsy)
+```
+The Collatz conjecture is a mathematical problem involving positive integers. If a number is even, divide it by 2; if it is odd, multiply it by 3 and add 1. The conjecture states that repeating this process will eventually reach 1 for any positive integer.
+
+The Collatz equation is $f(n) = n/2$, while $n$ is even, $f(n) = 3n+1$, while $n$ is odd.
 
