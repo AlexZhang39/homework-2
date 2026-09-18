@@ -1,0 +1,16 @@
+---
+title: "homework-2"
+format: pdf
+editor: visual
+---
+
+## Question 1
+```{r}
+#| eval: false
+install.packages("aRtsy")
+```
+
+install.packages() is used to install a package on the computer, while library() is used to load an installed package into the current R session. Usually, a package only needs to be installed once, but library() needs to be run every time when starting a new R session and want to use that package.
+
+
+
