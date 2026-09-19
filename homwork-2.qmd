@@ -16,6 +16,8 @@ install.packages("aRtsy")
 
 install.packages() is used to install a package on the computer, while library() is used to load an installed package into the current R session. Usually, a package only needs to be installed once, but library() needs to be run every time when starting a new R session and want to use that package.
 
+\newpage
+
 ## Question 2
 
 ```{r}
@@ -24,6 +26,8 @@ library(aRtsy)
 The Collatz conjecture is a mathematical problem involving positive integers. If a number is even, divide it by 2; if it is odd, multiply it by 3 and add 1. The conjecture states that repeating this process will eventually reach 1 for any positive integer.
 
 The Collatz equation is $f(n) = n/2$, while $n$ is even, $f(n) = 3n+1$, while $n$ is odd.
+
+\newpage
 
 ## Question 3
 
@@ -37,7 +41,7 @@ canvas_collatz(
 )
 ```
 
-The canvas_collatz() function creates plot based on the Collatz sequence. In this code, colors = c("blue") makes the lines blue, and n = 10 tells the function to use 10 random starting integers to create the lines. 
+The canvas_collatz() function creates plot based on the Collatz sequence. In this code, colors = c("blue") makes the lines blue, and n = 10 tells the function to use 10 random starting integers to create the lines.
 
 #### Part b
 
@@ -47,4 +51,18 @@ The canvas_collatz() function creates plot based on the Collatz sequence. In thi
 
 3.The set.seed() function sets the starting point for R’s random number generator. Using the same seed allows the random results to be reproduced, so the same artwork can be generated each time the document is rendered, which can be helpful for others to understand the plot.
 
+\newpage
+
+## Question 4
+
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 1:20
+)
+```
+
+In Question 3, n = 10 tells the function to use 10 randomly selected starting numbers. In Question 4, n = 1:20 gives the function the specific starting numbers from 1 to 20. Therefore, the graph in Question 4 will stay the same each time the code is run.
+
+It is not necessary to use set.seed(1) with this code because the starting numbers are already specified as 1 through 20. There is no random selection, so the result should be reported each time without choosing starting numbers randomly and stay the same.
 
