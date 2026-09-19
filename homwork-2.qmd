@@ -25,3 +25,26 @@ The Collatz conjecture is a mathematical problem involving positive integers. If
 
 The Collatz equation is $f(n) = n/2$, while $n$ is even, $f(n) = 3n+1$, while $n$ is odd.
 
+## Question 3
+
+#### Part a
+
+```{r}
+set.seed(10)
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+
+The canvas_collatz() function creates plot based on the Collatz sequence. In this code, colors = c("blue") makes the lines blue, and n = 10 tells the function to use 10 random starting integers to create the lines. 
+
+#### Part b
+
+1.The output is different each time because canvas_collatz() uses randomly selected starting integers. Since the random values can change each time when the code is run, the resulting plot can also change. 
+
+2.This can be troublesome in a .qmd file because rendering the document multiple times could produce different figures. This makes the results harder to get the same result each time.
+
+3.The set.seed() function sets the starting point for R’s random number generator. Using the same seed allows the random results to be reproduced, so the same artwork can be generated each time the document is rendered, which can be helpful for others to understand the plot.
+
+
